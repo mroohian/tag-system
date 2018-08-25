@@ -1,0 +1,18 @@
+{
+  "name": "tag-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.16.0",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

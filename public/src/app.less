@@ -1,0 +1,65 @@
+@color-border: #dcdcdc;
+@color-alternative-name: #888;
+@color-result-highlighted: #393A3B;
+@color-result-highlighted-background: #F0F1F2;
+@color-title-matched: #f00;
+@color-alternative-name-matched: #b33;
+
+@selector-height: 355px;
+
+.select2-container--default {
+  .select2-results {
+    max-height: @selector-height;
+  
+    ul {
+      max-height: @selector-height !important;
+    }
+  }
+
+  .select2-results__option--highlighted[aria-selected] {
+    background-color: @color-result-highlighted-background;
+    color: @color-result-highlighted;
+  }
+}
+
+.container {
+  text-align: center;
+  padding: 30px 5px;
+}
+
+.selector {
+  width: 500px;
+
+  &__result {
+    padding: 4px;
+    border: 1px solid @color-border;
+    border-radius: 2px;
+
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+
+      > .highlighted-text {
+        color: @color-title-matched;
+      }
+    }
+
+    &__description {
+      margin-bottom: 10px;
+    }
+
+    &__alternativeNameLabel {
+      color: @color-alternative-name;
+      padding: 2px;
+      display: inline-block;
+      border: 1px solid @color-alternative-name;
+      border-radius: 3px;
+
+      > .highlighted-text {
+        color: @color-alternative-name-matched;
+        font-weight: bold;
+      }
+    }
+  }
+}
